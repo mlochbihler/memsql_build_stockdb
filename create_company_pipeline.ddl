@@ -1,0 +1,6 @@
+CREATE PIPELINE company_pipeline 
+AS LOAD DATA S3 'lochbihler/stockdb'
+INTO TABLE company
+FIELDS TERMINATED BY ',' ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 LINES;
