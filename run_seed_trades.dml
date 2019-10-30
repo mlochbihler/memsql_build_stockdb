@@ -1,2 +1,1 @@
 CALL seed_trades(100000);
-CALL iter_stocks(30);
